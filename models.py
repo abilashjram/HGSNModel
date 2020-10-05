@@ -9,3 +9,4 @@ class User(db.Model):
     email = db.Column(db.String, nullable=False)
     secret_number = db.Column(db.Integer, unique=False)
     password = db.Column(db.String)
+    session_token = db.Column(db.String)
