@@ -8,4 +8,4 @@ class User(db.Model):
     name = db.Column(db.String, nullable=False)
     email = db.Column(db.String, nullable=False)
     secret_number = db.Column(db.Integer, unique=False)
-
+    password = db.Column(db.String)
